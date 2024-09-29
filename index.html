@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilaria Di Pumpo</title>
     <style>
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,33 +12,40 @@
             background-color: #f4f4f4;
             text-align: center;
         }
+
         header {
             background-color: #333;
             color: white;
             padding: 10px 0;
         }
+
         header h1 {
             margin: 0;
         }
+
         nav {
             background-color: #444;
             padding: 10px;
         }
+
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
         section {
             padding: 20px;
             background-color: white;
             margin: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         footer {
             background-color: #333;
             color: white;
@@ -54,8 +60,8 @@
             max-width: 600px;
             height: auto;
             margin: 40px auto;
-            perspective: 1000px;
         }
+
         .carousel {
             position: relative;
             width: 100%;
@@ -65,23 +71,27 @@
             align-items: center;
             transition: transform 1s ease-in-out;
         }
+
         .carousel img {
             position: absolute;
-            width: 80%;
+            width: 60%;
             height: auto;
             border-radius: 10px;
             opacity: 0;
             transition: transform 1s ease, opacity 1s ease;
         }
+
         .carousel img.active {
             opacity: 1;
             transform: translateZ(300px) scale(1);
         }
+
         .carousel img.prev {
             opacity: 0.5;
             transform: translateX(-300px) scale(0.8) rotateY(-30deg);
             filter: brightness(50%);
         }
+
         .carousel img.next {
             opacity: 0.5;
             transform: translateX(300px) scale(0.8) rotateY(30deg);
@@ -90,28 +100,28 @@
 
         /* Responsività */
         @media only screen and (max-width: 767px) {
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
             .carousel-container {
                 width: 90%;
             }
+
+            .carousel img {
+                width: 90%;
+            }
+
             section {
                 margin: 10px 5px;
                 padding: 15px;
             }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
             footer {
                 font-size: 14px;
             }
         }
-
-        @media only screen and (min-width: 768px) {
-            .carousel img {
-                width: 60%;
-            }
-        }
-
     </style>
 </head>
 <body>
@@ -126,7 +136,9 @@
     <a href="#services">Servizi</a>
     <a href="#contact">Contatti</a>
 </nav>
+
 <br>
+
 <div class="carousel-container">
     <div class="carousel">
         <img src="sito/brac.jpeg" alt="Image 1" class="active">
