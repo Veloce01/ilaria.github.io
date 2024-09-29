@@ -50,8 +50,9 @@
         /* Stili del carosello */
         .carousel-container {
             position: relative;
-            width: 600px;
-            height: 400px;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
             margin: 40px auto;
             perspective: 1000px;
         }
@@ -66,7 +67,7 @@
         }
         .carousel img {
             position: absolute;
-            width: 60%;
+            width: 80%;
             height: auto;
             border-radius: 10px;
             opacity: 0;
@@ -86,6 +87,31 @@
             transform: translateX(300px) scale(0.8) rotateY(30deg);
             filter: brightness(50%);
         }
+
+        /* Responsività */
+        @media only screen and (max-width: 767px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .carousel-container {
+                width: 90%;
+            }
+            section {
+                margin: 10px 5px;
+                padding: 15px;
+            }
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .carousel img {
+                width: 60%;
+            }
+        }
+
     </style>
 </head>
 <body>
