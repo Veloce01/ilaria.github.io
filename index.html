@@ -57,10 +57,10 @@
         .carousel-container {
             position: relative;
             width: 100%;
-            max-width: 600px;
-            height: 400px; /* Altezza definita per il carosello */
+            max-width: 800px; /* Aumenta la larghezza del contenitore */
+            height: 400px;
             margin: 40px auto;
-            overflow: hidden; /* Assicura che le immagini non escano dal contenitore */
+            overflow: visible; /* Assicura che le immagini laterali siano visibili */
         }
 
         .carousel {
@@ -103,11 +103,11 @@
         @media only screen and (max-width: 767px) {
             .carousel-container {
                 width: 90%;
-                height: 300px; /* Altezza ridotta per dispositivi mobili */
+                height: 300px;
             }
 
             .carousel img {
-                width: 90%; /* Immagini più larghe su mobile */
+                width: 90%;
             }
 
             section {
